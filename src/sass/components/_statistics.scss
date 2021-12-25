@@ -1,0 +1,38 @@
+
+
+#statistics {
+
+  width: 90%;
+  margin: 0 auto 175px;
+
+  display: flex;
+  flex-direction: row;
+
+  flex-flow: wrap;
+  justify-content: center;
+
+  align-items: center;
+
+  .column {
+    .icon {
+      height: 38px;
+      width: 33px;
+      margin-bottom: 28px;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 5%;
+
+    span {
+      line-height: 110%;
+      font-weight: $font-weight-semi-bold;
+    }
+
+    .value {
+      font-size: 62px;
+    }
+  }
+}

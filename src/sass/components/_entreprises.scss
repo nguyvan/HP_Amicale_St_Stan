@@ -1,0 +1,35 @@
+
+
+
+#entreprises {
+
+  display: flex;
+
+  width: 90%;
+  margin: auto;
+
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  span {
+    color: $light-gray;
+    font-size: $font-size-small;
+
+    text-align: center;
+  }
+
+  .items {
+    display: flex;
+    flex-flow: wrap;
+
+    justify-content: center;
+
+    margin-bottom: 170px;
+
+    .logo {
+      width: 116px;
+      margin: 30px;
+    }
+  }
+}

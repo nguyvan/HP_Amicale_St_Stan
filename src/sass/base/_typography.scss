@@ -1,0 +1,49 @@
+h1 {
+  @include text($primary-font-family, $font-h1, 52px, $font-weight-semi-bold);
+}
+
+h2 {
+  @include text($primary-font-family, $font-h2, 60px, $font-weight-semi-bold);
+}
+
+h3 {
+  @include text($primary-font-family, $font-h3, 60px, $font-weight-semi-bold);
+}
+
+h4 {
+  @include text($primary-font-family, $font-h4, 60px, $font-weight-semi-bold);
+}
+
+h5 {
+  @include text($primary-font-family, $font-h5, 60px, $font-weight-semi-bold);
+}
+
+@media (max-width: 950px) {
+  h1 {
+    @include text($primary-font-family, 42px, 42px, $font-weight-semi-bold);
+  }
+
+  h2 {
+    @include text($primary-font-family, 38px, 50px, $font-weight-semi-bold);
+  }
+
+  h3 {
+    @include text($primary-font-family, 35px, 45px, $font-weight-semi-bold);
+  }
+
+  h4 {
+    @include text($primary-font-family, 25px, 45px, $font-weight-semi-bold);
+  }
+
+  h5 {
+    @include text($primary-font-family, 20px, 45px, $font-weight-semi-bold);
+  }
+}
+
+//
+//$font-h1: 52px;
+//$font-h2: 48px;
+//$font-h3: 45px;
+//$font-h4: 24px;
+//$font-h5: 22px;
+

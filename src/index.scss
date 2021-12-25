@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+// Utils: functions, variables and mixins
+@import './sass/utils/index';
+
+// Base style
+@import './sass/base/index';
+
+// Components style
+@import 'sass/components/primary-cta';
+@import 'sass/components/secondary-cta';
+@import './sass/components/entreprises';
+@import './sass/components/footer';
+@import './sass/components/formulas';
+@import './sass/components/header';
+@import './sass/components/layout';
+@import './sass/components/missions';
+@import './sass/components/newsletter-subscription';
+@import './sass/components/reasons';
+@import './sass/components/statistics';
+@import './sass/components/page-header';
+@import './sass/components/heading-section';
+@import './sass/components/modal';
+@import './sass/components/overlay-menu';
+@import './sass/components/checkout';
+@import './sass/components/top-bar';
+@import './sass/components/newsletter-subscription-blog';
+// Layout style
+@import 'sass/screens/index';

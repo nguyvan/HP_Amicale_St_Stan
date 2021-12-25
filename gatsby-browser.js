@@ -1,0 +1,6 @@
+import "./src/index.scss"
+import "firebase/auth"
+import "firebase/firestore"
+import "firebase/functions"
+import "firebase/database"
+import "firebase/app"

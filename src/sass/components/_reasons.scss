@@ -1,0 +1,127 @@
+
+
+
+
+#reasons {
+
+  display: flex;
+  position: relative;
+
+  width: 95%;
+  margin: auto;
+
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  h3 {
+    margin: 39px auto 60px;
+    text-align: center;
+  }
+
+  .tag-container {
+    height: 52px;
+    width: 191px;
+    background-color: $secondary-pink;
+    border-radius: 7px;
+
+    position: relative;
+
+    h5 {
+      position: absolute;
+      top: 12px;
+      left: 26px;
+
+      font-weight: $font-weight-semi-bold;
+      margin: 0;
+      line-height: 125%;
+      color: $primary-pink;
+    }
+
+  }
+
+  .items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+
+    margin-bottom: 144px;
+  }
+  
+  
+  @media (max-width: 1165px) {
+
+    width: 90%;
+
+    .items {
+      flex-flow: wrap;
+      justify-content: center;
+    }
+
+  }
+
+
+}
+
+#reason {
+
+    height: 408px;
+    width: 365px;
+
+
+    position: relative;
+
+    .circle {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      visibility: hidden;
+    }
+
+    background: $white;
+    @include shadow();
+
+
+    border-radius: 18px;
+    padding: 35px;
+
+    text-align: center;
+
+    h4 {
+      line-height: 30px;
+    }
+
+    .icon {
+      width: 111px;
+      height: 97px;
+
+      margin: 0 auto;
+      fill: white;
+    }
+
+    p {
+      color: $dark-blue;
+    }
+
+    &:hover {
+      background: none;
+
+      h4, p {
+        color: $white;
+      }
+
+      .circle {
+        visibility: visible;
+      }
+    }
+
+
+    @media (max-width: 1165px) {
+      margin: 30px;
+    }
+
+  }
+

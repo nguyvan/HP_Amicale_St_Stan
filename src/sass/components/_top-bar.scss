@@ -1,0 +1,43 @@
+
+#top-bar {
+  min-height: 63px;
+  background-color: #3751FF;
+  padding: 0 20px;
+  display: flex;
+
+  .close-button-container {
+    display: flex;
+    min-height: 63px;
+    color: $white;
+
+    margin-left: 8px;
+
+    .close-button {
+      margin: auto 0;
+      cursor: pointer
+    }
+
+  }
+
+
+  .content, a, p {
+    color: $white;
+    font-size: $font-size-small;
+    margin: auto;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  .content {
+    min-height: 63px;
+    display: flex;
+    text-align: center;
+  }
+
+}
+
+.hidden__top-bar {
+  display: none !important;
+}

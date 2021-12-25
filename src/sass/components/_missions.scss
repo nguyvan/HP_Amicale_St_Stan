@@ -1,0 +1,167 @@
+
+
+
+#missions {
+  position: relative;
+  min-height: 800px;
+
+  .col-text {
+    z-index: 1000;
+    max-width: 550px;
+    width: 40%;
+
+    margin-left: 8%;
+
+    .content {
+      max-width: 448px;
+    }
+
+    .signature {
+      display: flex;
+      align-items: center;
+
+      .img {
+        width: 110px;
+        margin-right: 25px;
+      }
+
+      span {
+        font-size: $font-size-xsmall;
+        line-height: 150%;
+        color: $dark-blue;
+      }
+    }
+
+    .cta-container {
+      margin-top: 50px;
+    }
+  }
+
+  .cards {
+
+    .background {
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      margin-top: -260px;
+    }
+
+    .card {
+      width: 262px;
+      height: 335px;
+
+      padding: 28px;
+
+      background-color: $white;
+      border-radius: 18px;
+      box-shadow: 0 4px 4px rgba(135, 146, 161, 0.16), 0 6px 41px rgba(135, 146, 161, 0.11);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .icon {
+        width: 50px;
+
+        margin-bottom: 15px;
+      }
+
+      h5 {
+        margin: 0;
+      }
+
+      span {
+        color: $dark-blue;
+        line-height: 27px;
+        font-size: $font-size-base;
+        text-align: center;
+      }
+
+    }
+
+    .valeurs {
+      position: absolute;
+      top: 410px;
+      right: 8%;
+    }
+
+    .services {
+      position: absolute;
+      top: 0;
+      right: 8%;
+    }
+
+    .entraide {
+      position: absolute;
+      top: 200px;
+      right: 31%;
+    }
+  }
+
+  @media (min-width: 950px) and (max-width: 1200px) {
+    .cards {
+
+      .card {
+        width: 400px;
+        height: 230px;
+      }
+
+      .valeurs {
+        top: 250px;
+      }
+
+      .entraide {
+        top: 500px;
+        right: 8%;
+      }
+    }
+  }
+
+  @media (max-width: 950px) {
+
+      display: flex;
+      flex-flow: wrap;
+
+      .col-text {
+        width: 90%;
+        margin: 0 40px 80px;
+        z-index: 0;
+
+        .cta-container {
+          margin: 80px auto 0;
+
+          .button {
+            width: 70%;
+            margin: auto;
+          }
+        }
+
+
+      }
+
+      .cards {
+        .background {
+          display: none;
+        }
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .card {
+          width: 80%;
+          min-width: 230px;
+          height: 250px;
+          margin: 20px auto;
+        }
+        .entraide, .services, .valeurs {
+          position: relative;
+          top: 0;
+          right: 0;
+        }
+      }
+  }
+}

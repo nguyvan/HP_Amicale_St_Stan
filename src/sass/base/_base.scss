@@ -1,0 +1,67 @@
+html {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  margin: 0;
+  @include text();
+}
+
+body {
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+//a {
+//  color: $blue-500;
+//  text-decoration: none;
+//
+//  svg path {
+//    fill: $blue-500;
+//  }
+//
+//  &:hover {
+//    color: $blue-800;
+//    text-decoration: none;
+//
+//    svg path {
+//      fill: $blue-800;
+//    }
+//  }
+//}
+//
+//hr {
+//  border-bottom: 0;
+//  border-top: 1px solid rgba(0, 0, 0, 0.1);
+//}
+//
+//p {
+//  margin-bottom: 0;
+//}

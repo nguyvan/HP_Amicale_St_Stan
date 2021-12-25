@@ -1,0 +1,45 @@
+
+
+
+
+#page-header {
+
+  height: 206px;
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+  background-color: $super-light-gray;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 80%;
+    margin: auto;
+
+    h1 {
+      margin: 15px 0;
+      text-align: center;
+    }
+
+    .shape {
+      width: 208px;
+    }
+  }
+
+  @media (max-width: 609px) {
+
+    height: 306px;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+
+  }
+
+
+
+
+}

@@ -1,0 +1,21 @@
+.form-content {
+    margin-bottom: 1rem;
+    .form-items {
+        margin-top: 0.5rem;
+        border-radius: 0.75rem;
+        &:placeholder {
+            font-family: "Open Sans";
+            font-style: "normal";
+            font-weight: "normal";
+            font-size: 1rem;
+            color: #D8D8D8;
+        } 
+    }
+    .form-text {
+        color: #92969D;
+        font-family: "Open Sans";
+        font-style: "normal";
+        font-weight: "normal";
+        font-size: 1rem;
+    }
+}

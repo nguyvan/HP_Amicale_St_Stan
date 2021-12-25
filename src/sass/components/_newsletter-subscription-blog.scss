@@ -1,0 +1,142 @@
+#newsletter-subscription-blog {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 640px;
+
+  h3 {
+    word-break: keep-all;
+    font-size: 24px;
+    line-height: 1.45;
+    font-weight: bold;
+    color: $black;
+    font-family: Merriweather, Georgia, serif;
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin: 0 auto 30px;
+    color: #73737D;
+    line-height: 1.75;
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
+    font-size: 16px;
+  }
+
+  .form {
+    position: relative;
+  }
+
+  .input {
+    position: relative;
+    background: rgba(0,0,0,0.05);
+    border-radius: 35px;
+    border: none;
+    padding: 13px 21px 13px 35px;
+    width: 471px;
+    color: $black;
+
+    &.error {
+      background-color: rgba(238,86,91,0.1);
+    }
+  }
+
+  .button {
+
+    cursor: pointer;
+
+    position: absolute;
+    left: 306px;
+    top: 3px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 161px;
+    height: 35px;
+    border: 1px solid $secondary-blue;
+    color: $secondary-blue;
+    background: transparent;
+    font-weight: 400;
+    border-radius: 35px;
+    letter-spacing: 0.42px;
+
+    transition: border-color 0.2s var(--ease-in-out-quad),background 0.2s var(--ease-in-out-quad),color 0.2s var(--ease-in-out-quad);
+
+    &:hover {
+      background-color: $secondary-blue;
+      color: $white;
+    }
+
+    &.error {
+      border: 1px solid #EE565B;
+      color: #EE565B;
+
+      &:hover {
+        background-color: #EE565B;
+        color: $white;
+      }
+    }
+
+    &:disabled {
+      background-color: $secondary-blue;
+      color: $white;
+      cursor: not-allowed;
+    }
+  }
+
+  .error-message {
+    position: absolute;
+    left: 35px;
+    bottom: -30px;
+    color: #EE565B;
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
+  }
+
+}
+
+@media (max-width: 830px) {
+
+  #newsletter-subscription-blog {
+    width: 100%;
+    max-width: 640px;
+
+    h3 {
+      padding: 0 50px;
+      margin-bottom: 15px;
+      font-size: 22px;
+    }
+
+    p {
+      padding: 0 26px;
+      margin: 0 auto 25px;
+    }
+
+    .input {
+      width: calc(100% - 36px);
+      margin: 0 18px 30px;
+      padding: 14px 14px 14px 30px;
+    }
+
+    .button {
+      position: relative;
+      height: 60px;
+      width: 100%;
+      top: 0;
+      left: 0;
+      border-right: none;
+      border-bottom: none;
+      border-left: none;
+      border-image: initial;
+      border-radius: 0;
+      border-top: 1px solid rgba(8,8,11,0.15);
+    }
+
+    .error-message {
+      left: 50px;
+      top: 40px;
+    }
+
+
+  }
+}
