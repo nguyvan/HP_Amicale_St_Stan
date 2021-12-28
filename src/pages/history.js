@@ -14,7 +14,7 @@ const history = (props) => {
                 <div className="col-sm-8">
                     <Filtre />
                 </div>
-                <div className="col-sm-4" style={{minWidth: "500px", alignSelf: "center"}}>
+                <div className="col-sm-4" style={{minWidth: "411px", alignSelf: "center"}}>
                     <Form />
                 </div>
             </div>
